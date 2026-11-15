@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Alert 🎂</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<canvas id="confetti"></canvas>
+<div class="stars"></div>
+
+<header>
+    <div class="logo">🎂 BIRTHDAY<span> ALERT</span></div>
+    <div class="status"><span class="dot"></span> MUHIM E'LON</div>
+</header>
+
+<main>
+
+    <section class="hero">
+        <div class="badge">🚨 OILAM UCHUN MAXSUS XABAR</div>
+
+        <h1>OILAM, MENI<br><span>UNUTDINGIZMI?!</span> 😂</h1>
+
+        <p class="hero-text">
+            Bugun oddiy kun emas!
+            Oilangizdagi eng zo'r insonning kuni! 😎
+        </p>
+
+        <div class="cake">🎂</div>
+
+        <div class="hero-bottom">
+            <span>👇 PASTGA TUSHING, MUHIM GAP BOR</span>
+            <div class="arrow">↓</div>
+        </div>
+    </section>
+
+    <section class="announcement card">
+        <div class="icon">📢</div>
+        <div class="small-title">RASMIY BAYONOT</div>
+        <h2>DIQQAT! DIQQAT!</h2>
+        <p>
+            Hurmatli ota-onam, aka-ukalar va opa-singillar!
+            Sizlarga bir muhim ma'lumotni yetkazmoqchiman.
+        </p>
+        <div class="highlight">
+            BUGUN MENING TUG'ILGAN KUNIM! 🎉
+        </div>
+        <p>
+            Hali ham eslamadingizmi?
+            Telefoningizga qarab qo'ying, balki nimanidir
+            unutgandirsiz! 😂
+        </p>
+    </section>
+
+    <section class="gift-section card">
+        <div class="icon">🎁</div>
+        <div class="small-title">MUHIM MA'LUMOT</div>
+        <h2>SOVG'ALAR QABUL QILINADI!</h2>
+
+        <p>
+            Sovg'alar 19-noyabrga o'tar kechasi
+            soat 00:00 gacha qabul qilinadi!
+        </p>
+
+        <div class="gift-types">
+            <div>💵 <span>Naqd pul</span></div>
+            <div>📱 <span>Telefon</span></div>
+            <div>🚗 <span>Mashina</span></div>
+            <div>🎁 <span>Boshqa sovg'alar</span></div>
+        </div>
+
+        <div class="warning">
+            ⚠️ SOVG'ASIZ KELISH TAVSIYA ETILMAYDI! 😂
+        </div>
+    </section>
+
+    <section class="countdown-section card">
+        <div class="small-title">⏳ VAQT HISOBLANMOQDA</div>
+        <h2>QANCHA VAQT QOLDI?</h2>
+
+        <p class="count-text">
+            Sovg'a topshirish uchun qolgan vaqt:
+        </p>
+
+        <div class="timer">
+            <div class="time-box">
+                <strong id="days">00</strong>
+                <span>KUN</span>
+            </div>
+            <div class="time-box">
+                <strong id="hours">00</strong>
+                <span>SOAT</span>
+            </div>
+            <div class="time-box">
+                <strong id="minutes">00</strong>
+                <span>DAQIQA</span>
+            </div>
+            <div class="time-box">
+                <strong id="seconds">00</strong>
+                <span>SONIYA</span>
+            </div>
+        </div>
+
+        <div class="deadline">
+            🕛 19-NOYABR 2026 | 00:00
+        </div>
+
+        <div id="expired"></div>
+    </section>
+
+    <section class="surprise card">
+        <div class="icon">💜</div>
+        <div class="small-title">SIZLAR UCHUN MAXSUS</div>
+        <h2>SOVG'A QUTISI</h2>
+        <p>Qutini bosing, ichida siz uchun xabar bor!</p>
+
+        <div class="gift-box" id="giftBox" onclick="openGift()">
+            🎁
+        </div>
+
+        <button class="main-btn" onclick="openGift()">
+            SOVG'ANI OCHISH 🎁
+        </button>
+
+        <div id="message">
+            😂 HAHAHA! SOVG'A MENING O'ZIMMAN!
+            <br><br>
+            Endi esa meni tabriklashni boshlang!
+            <br><br>
+            ❤️ SIZLARNI YAXSHI KO'RAMAN!
+        </div>
+    </section>
+
+    <section class="final-card">
+        <div class="final-emoji">🥳</div>
+        <h2>UNUTMANG!</h2>
+        <p>
+            Tug'ilgan kunim yiliga bir marta keladi.
+            Sovg'alar esa har kuni emas! 😂
+        </p>
+        <button class="main-btn" onclick="celebrate()">
+            🎉 BAYRAMNI BOSHLASH!
+        </button>
+    </section>
+
+</main>
+
+<footer>
+    <div class="footer-logo">BIRTHDAY ALERT 🎂</div>
+    MADE WITH ❤️ BY THE BIRTHDAY BOY
+    <p>© 2026 | MAXSUS TUG'ILGAN KUN SAYTI</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
